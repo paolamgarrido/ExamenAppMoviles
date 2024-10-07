@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="4dp"
+    android:id="@+id/characterInfo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_border"
+            android:padding="8dp">
+
+            <!-- ImageView imagen del personaje -->
+            <ImageView
+                android:id="@+id/IVCharacterImage"
+                android:layout_width="88dp"
+                android:layout_height="189dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <!-- Stack de TextViews para los detalles -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <!-- Nombre -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/semiBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/TVCharacterName"
+                    android:text="Character Name" />
+
+                <!-- Ki & Max Ki -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVCharacterKi"
+                    android:text="Ki: 60,000,000 / Max Ki: 90 Septillion" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVCharacterMaxKi"
+                    android:text="Max Ki: 90 Septillion" />
+
+                <!-- Race & Gender -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVCharacterRace"
+                    android:text="Race: Saiyan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVCharacterGender"
+                    android:text="Race: Gender: Male" />
+
+                <!-- Affiliation -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVCharacterAffiliation"
+                    android:text="Affiliation: Z Fighter" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/TVDeletedAt"
+                    android:text="Affiliation: Z Fighter" />
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/semiBlack"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/TVCharacterDescription"
+                    android:text="Description goes here" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

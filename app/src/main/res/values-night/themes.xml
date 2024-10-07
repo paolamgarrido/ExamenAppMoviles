@@ -13,4 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.AppExamen.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Disables the Action Bar at the top of the screen -->
+        <item name="windowActionBar">false</item>
+        <!-- Removes the title from the app window -->
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
